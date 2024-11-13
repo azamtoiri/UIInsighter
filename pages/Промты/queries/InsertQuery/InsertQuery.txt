@@ -1,0 +1,18 @@
+INSERT INTO public."assistants" (
+	"name",
+	"system_prompt",
+	"user_prompt",
+	"first_message_prompt",
+	"middle_part_prompt",
+	"last_message_prompt",
+	"for_conversation",
+	"created_at")
+VALUES (
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.system_prompt}}',
+	'{{insert_form.formData.user_prompt}}',
+	'{{insert_form.formData.first_message_prompt}}',
+	'{{insert_form.formData.middle_part_prompt}}',
+	'{{insert_form.formData.last_message_prompt}}',
+	'{{insert_form.formData.for_conversation}}',
+	'{{insert_form.formData.created_at}}');

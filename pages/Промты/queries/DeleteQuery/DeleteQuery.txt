@@ -1,0 +1,2 @@
+DELETE FROM public."assistants"
+  WHERE "assistant_id" = {{data_table.triggeredRow.assistant_id}};

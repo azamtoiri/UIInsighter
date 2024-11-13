@@ -1,0 +1,10 @@
+UPDATE public."assistants" SET
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		"system_prompt" = '{{update_form.fieldState.system_prompt.isVisible ? update_form.formData.system_prompt : update_form.sourceData.system_prompt}}',
+    "user_prompt" = '{{update_form.fieldState.user_prompt.isVisible ? update_form.formData.user_prompt : update_form.sourceData.user_prompt}}',
+		"first_message_prompt" = '{{update_form.fieldState.first_message_prompt.isVisible ? update_form.formData.first_message_prompt : update_form.sourceData.first_message_prompt}}',
+		"middle_part_prompt" = '{{update_form.fieldState.middle_part_prompt.isVisible ? update_form.formData.middle_part_prompt : update_form.sourceData.middle_part_prompt}}',
+		"last_message_prompt" = '{{update_form.fieldState.last_message_prompt.isVisible ? update_form.formData.last_message_prompt : update_form.sourceData.last_message_prompt}}',
+		"for_conversation" = '{{update_form.fieldState.for_conversation.isVisible ? update_form.formData.for_conversation : update_form.sourceData.for_conversation}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}'
+WHERE "assistant_id" = {{data_table.selectedRow.assistant_id}};
