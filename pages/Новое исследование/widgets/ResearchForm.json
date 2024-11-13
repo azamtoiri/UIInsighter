@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 171,
+  "bottomRow": 167,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -295,6 +295,15 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.research.children.examinees_user_names.children.__array_item__.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.research.children.examinees_user_names.children.__array_item__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.research.children.examinees_user_names.cellBorderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -668,18 +677,41 @@
             "examinees_user_names": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "accessor": "examinees_user_names",
+              "backgroundColor": "#FAFAFA",
               "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "boxShadow": "none",
-              "children": {},
+              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
+              "cellBoxShadow": "none",
+              "children": {
+                "__array_item__": {
+                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
+                  "accessor": "__array_item__",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
+                  "boxShadow": "none",
+                  "children": {},
+                  "dataType": "undefined",
+                  "fieldType": "Text Input",
+                  "iconAlign": "left",
+                  "identifier": "__array_item__",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isSpellCheck": false,
+                  "isVisible": true,
+                  "label": "Array Item",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "__array_item__",
+                  "position": -1
+                }
+              },
               "dataType": "array",
               "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.examinees_user_names))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "fieldType": "Multiline Text Input",
-              "iconAlign": "left",
+              "fieldType": "Array",
               "identifier": "examinees_user_names",
+              "isCollapsible": true,
               "isCustomField": false,
               "isDisabled": false,
               "isRequired": false,
-              "isSpellCheck": false,
               "isVisible": true,
               "label": "Examinees User Names",
               "labelTextSize": "0.875rem",
