@@ -1,7 +1,10 @@
 SELECT
-  public.researches.research_id,
-	public.research_status.status_name,
-	public.researches.name
+  public.research_status.status_name,
+	public.researches.research_id,
+	public.researches.name,
+	public.researches.owner_id, 
+	public.researches.start_date,
+	public.researches.end_date
 FROM public.researches
 JOIN public.research_status
 ON public.researches.research_id = public.research_status.research_id
