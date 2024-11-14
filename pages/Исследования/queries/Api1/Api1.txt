@@ -1,25 +1,25 @@
 {
   "research": {
-    "research_uuid": "{{JSONForm5.sourceData.research.research_uuid}}",
-    "name": "{{JSONForm5.sourceData.research.name}}",
-    "title": "{{JSONForm5.sourceData.research.title}}",
-    "theme": "{{JSONForm5.sourceData.research.theme}}",
-    "start_date": "{{JSONForm5.sourceData.research.start_date}}",
-    "end_date": "{{JSONForm5.sourceData.research.end_date}}",
-    "descriptions": "{{JSONForm5.sourceData.research.descriptions}}",
-    "additional_information": "{{JSONForm5.sourceData.research.additional_information}}",
-    "assistant_id": {{JSONForm5.sourceData.research.assistant_id}},
-    "examinees_ids": {{JSONForm5.sourceData.research.examinees_ids}},
-    "examinees_user_names": {{JSONForm5.sourceData.research.examinees_user_names}}
+    "research_uuid": "{{JSONForm1.sourceData.research.research_uuid}}",
+    "name": "{{JSONForm1.sourceData.research.name}}",
+    "title": "{{JSONForm1.sourceData.research.title}}",
+    "theme": "{{JSONForm1.sourceData.research.theme}}",
+    "start_date": "{{JSONForm1.sourceData.research.start_date}}",
+    "end_date": "{{JSONForm1.sourceData.research.end_date}}",
+    "descriptions": "{{JSONForm1.sourceData.research.descriptions}}",
+    "additional_information": "{{JSONForm1.sourceData.research.additional_information}}",
+    "assistant_id": {{JSONForm1.sourceData.research.assistant_id}},
+    "examinees_ids": {{JSONForm1.sourceData.research.examinees_ids}},
+    "examinees_user_names": {{JSONForm1.sourceData.research.examinees_user_names}}
   
   },
   "owner": {
-    "name": "{{JSONForm5.sourceData.owner.name}}",
-    "service_owner_id": {{JSONForm5.sourceData.owner.service_owner_id}},
-    "second_name": "{{JSONForm5.sourceData.owner.second_name}}",
-    "phone_number": "{{JSONForm5.sourceData.owner.phone_number}}",
-    "tg_link": "{{JSONForm5.sourceData.owner.tg_link}}",
-    "language_code": "{{JSONForm5.sourceData.owner.language_code}}",
-    "service_id": {{JSONForm5.sourceData.owner.service_id}}
+    "name": "{{JSONForm1.sourceData.owner.name}}",
+    "service_owner_id": {{JSONForm1.sourceData.owner.service_owner_id}},
+    "second_name": "{{JSONForm1.sourceData.owner.second_name}}",
+    "phone_number": "{{JSONForm1.sourceData.owner.phone_number}}",
+    "tg_link": "{{JSONForm1.sourceData.owner.tg_link}}",
+    "language_code": "{{JSONForm1.sourceData.owner.language_code}}",
+    "service_id": {{JSONForm1.sourceData.owner.service_id}}
   }
 }

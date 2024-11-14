@@ -307,11 +307,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -333,7 +329,7 @@
   "mobileTopRow": 32,
   "needsErrorInfo": false,
   "onSubmit": "{{Api_Insighter.run().then(() => {\n  navigateTo('Исследования', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('API ERROR', 'error');\n});}}",
-  "originalBottomRow": 149,
+  "originalBottomRow": 196,
   "originalTopRow": 7,
   "parentColumnSpace": 18.5625,
   "parentId": "0",
@@ -378,7 +374,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Language Code",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "language_code",
@@ -463,10 +459,10 @@
               "iconAlign": "left",
               "identifier": "service_id",
               "isCustomField": false,
-              "isDisabled": false,
+              "isDisabled": true,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": false,
+              "isVisible": true,
               "label": "Service Id",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "service_id",
