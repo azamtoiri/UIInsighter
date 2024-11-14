@@ -1,5 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 111,
@@ -22,6 +23,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "status_name",
     "research_id",
     "name",
@@ -34,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731580843778,
+  "columnUpdatedAt": 1731582227162,
   "columnWidthMap": {
     "owner_id": 115,
     "research_id": 125,
@@ -102,6 +104,15 @@
     },
     {
       "key": "primaryColumns.end_date.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -118,6 +129,12 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemrjk7h779ul.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemz103z1bg7m.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -144,6 +161,66 @@
   "parentRowSpace": 10,
   "primaryColumnId": "research_id",
   "primaryColumns": {
+    "customColumn1": {
+      "alias": "analitics",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "menuButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isCompact": false,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "analitics",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "Результаты",
+      "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuItems": {
+        "menuItemrjk7h779ul": {
+          "id": "menuItemrjk7h779ul",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Excel",
+          "onClick": "{{Analytic_Excel.run()}}",
+          "widgetId": "ndy8mfqq1o"
+        },
+        "menuItemz103z1bg7m": {
+          "id": "menuItemz103z1bg7m",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "CSV",
+          "onClick": "{{Analytic_CSV.run()}}",
+          "widgetId": "bu23exq0qz"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "end_date": {
       "alias": "end_date",
       "allowCellWrapping": false,
