@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 701,
+  "bottomRow": 70,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 1420,
+      "minHeight": 700,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -81,5 +81,5 @@
   "version": 2,
   "widgetId": "h1s2j3pybv",
   "widgetName": "Modal1",
-  "width": 678
+  "width": 758
 }
