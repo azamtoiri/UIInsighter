@@ -264,7 +264,11 @@
       "key": "schema.__root_schema__.children.client_config.children.test_mode.defaultValue"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
   "fieldLimitExceeded": false,
   "fixedFooter": true,
   "flexVerticalAlignment": "start",
@@ -280,6 +284,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "onSubmit": "{{singup.run()}}",
   "originalBottomRow": 68,
   "originalTopRow": 6,
   "parentColumnSpace": 6.9375,
