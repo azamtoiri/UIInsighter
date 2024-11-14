@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 167,
+  "bottomRow": 149,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -105,15 +105,6 @@
       "key": "resetButtonStyles.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.research.children.research_uuid.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.research_uuid.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.research_uuid.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.research.children.name.defaultValue"
     },
     {
@@ -139,9 +130,6 @@
     },
     {
       "key": "schema.__root_schema__.children.research.children.theme.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.start_date.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.research.children.start_date.accentColor"
@@ -267,9 +255,6 @@
       "key": "schema.__root_schema__.children.owner.children.language_code.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.owner.children.service_id.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.owner.children.service_id.accentColor"
     },
     {
@@ -294,21 +279,11 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.research.children.examinees_user_names.children.__array_item__.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.examinees_user_names.children.__array_item__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.examinees_user_names.cellBorderRadius"
-    }
-  ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
       "key": "sourceData"
     }
   ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -330,7 +305,7 @@
   "mobileTopRow": 32,
   "needsErrorInfo": false,
   "onSubmit": "{{Api_Insighter.run().then(() => {\n  navigateTo('Исследования', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('API ERROR', 'error');\n});}}",
-  "originalBottomRow": 167,
+  "originalBottomRow": 149,
   "originalTopRow": 7,
   "parentColumnSpace": 18.5625,
   "parentId": "0",
@@ -455,7 +430,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "number",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.owner.service_id))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Number Input",
               "iconAlign": "left",
               "identifier": "service_id",
@@ -463,7 +438,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Service Id",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "service_id",
@@ -619,7 +594,7 @@
               "closeOnSelection": false,
               "convertToISO": false,
               "dataType": "string",
-              "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
+              "dateFormat": "YYYY-MM-DDTHH:mm:ss",
               "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.research.end_date, \"YYYY-MM-DDTHH:mm:ss.sssZ\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "fieldType": "Datepicker",
               "identifier": "end_date",
@@ -678,47 +653,40 @@
             "examinees_user_names": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "accessor": "examinees_user_names",
-              "backgroundColor": "#FAFAFA",
               "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "boxShadow": "none",
-              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "cellBoxShadow": "none",
-              "children": {
-                "__array_item__": {
-                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-                  "accessor": "__array_item__",
-                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-                  "boxShadow": "none",
-                  "children": {},
-                  "dataType": "undefined",
-                  "fieldType": "Text Input",
-                  "iconAlign": "left",
-                  "identifier": "__array_item__",
-                  "isCustomField": false,
-                  "isDisabled": false,
-                  "isRequired": false,
-                  "isSpellCheck": false,
-                  "isVisible": true,
-                  "label": "Array Item",
-                  "labelTextSize": "0.875rem",
-                  "originalIdentifier": "__array_item__",
-                  "position": -1
-                }
-              },
+              "children": {},
               "dataType": "array",
               "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.examinees_user_names))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "fieldType": "Array",
+              "fieldType": "Multiselect",
               "identifier": "examinees_user_names",
-              "isCollapsible": true,
               "isCustomField": false,
               "isDisabled": false,
+              "isFilterable": false,
               "isRequired": false,
               "isVisible": true,
               "label": "Examinees User Names",
               "labelTextSize": "0.875rem",
+              "options": [
+                {
+                  "label": "Blue",
+                  "value": "BLUE"
+                },
+                {
+                  "label": "Green",
+                  "value": "GREEN"
+                },
+                {
+                  "label": "Red",
+                  "value": "RED"
+                }
+              ],
               "originalIdentifier": "examinees_user_names",
               "position": 10,
-              "sourceData": []
+              "serverSideFiltering": false,
+              "sourceData": [
+                "string"
+              ]
             },
             "name": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
@@ -742,28 +710,6 @@
               "position": 1,
               "sourceData": "string"
             },
-            "research_uuid": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "accessor": "research_uuid",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.research_uuid))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "research_uuid",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Research Uuid",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "research_uuid",
-              "position": 0,
-              "sourceData": "string"
-            },
             "start_date": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
               "accessor": "start_date",
@@ -773,13 +719,12 @@
               "closeOnSelection": false,
               "convertToISO": false,
               "dataType": "string",
-              "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.research.start_date, \"YYYY-MM-DDTHH:mm:ss.sssZ\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(ResearchForm.sourceData, ResearchForm.formData, ResearchForm.fieldState)}}",
+              "dateFormat": "YYYY-MM-DDTHH:mm:ss",
               "fieldType": "Datepicker",
               "identifier": "start_date",
               "isCustomField": false,
               "isDisabled": false,
-              "isRequired": false,
+              "isRequired": true,
               "isVisible": true,
               "label": "Start Date",
               "labelTextSize": "0.875rem",
@@ -911,7 +856,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "",
+  "sourceData": "{{{\n  \"research\": {\n    \"name\": \"\",\n    \"title\": \"\",\n    \"theme\": \"\",\n    \"start_date\": \"\",\n    \"end_date\": \"\",\n    \"descriptions\": \"\",\n    \"additional_information\": \"\",\n    \"assistant_id\": 0,\n    \"examinees_ids\": [\n      0\n    ],\n    \"examinees_user_names\": [\n      \"\"\n    ]\n  },\n  \"owner\": {\n    \"name\": \"\",\n    \"service_owner_id\": 0,\n    \"second_name\": \"\",\n    \"phone_number\": \"\",\n    \"tg_link\": \"\",\n    \"language_code\": \"\",\n    \"service_id\": 0\n  }\n}}}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

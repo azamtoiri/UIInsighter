@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{\nResearchForm.formData\n}}",
+      "body": "{{ResearchForm.formData}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

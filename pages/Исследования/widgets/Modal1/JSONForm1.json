@@ -114,25 +114,16 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.research.children.research_uuid.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.research.children.research_uuid.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.research.children.research_uuid.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.research.children.name.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.research.children.name.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.research.children.name.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.title.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.research.children.title.accentColor"
@@ -202,9 +193,6 @@
     },
     {
       "key": "schema.__root_schema__.children.research.children.examinees_ids.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.examinees_user_names.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.research.children.examinees_user_names.accentColor"
@@ -317,7 +305,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onSubmit": "{{Api1.run()}}",
-  "originalBottomRow": 170,
+  "originalBottomRow": 141,
   "originalTopRow": 6,
   "parentColumnSpace": 6.9375,
   "parentId": "btynu28m8y",
@@ -653,7 +641,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "array",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.examinees_user_names))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "examinees_user_names",
@@ -677,7 +665,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.name))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "name",
@@ -699,7 +687,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.research_uuid))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "research_uuid",
@@ -770,7 +758,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.title))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "title",

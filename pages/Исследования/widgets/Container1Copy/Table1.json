@@ -33,12 +33,12 @@
   },
   "columnOrder": [
     "research_id",
+    "status_name",
     "created_at",
     "updated_at",
-    "status_name",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1731495185837,
+  "columnUpdatedAt": 1731568035809,
   "columnWidthMap": {
     "research_id": 113
   },
@@ -198,7 +198,7 @@
       "isDiscardVisible": true,
       "isEditable": true,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "created_at",
       "notation": "standard",
       "originalId": "created_at",
