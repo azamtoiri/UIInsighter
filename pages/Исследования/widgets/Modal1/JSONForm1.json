@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#fff",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 170,
+  "bottomRow": 141,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -362,7 +362,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Language Code",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "language_code",
@@ -388,7 +388,7 @@
               "label": "Name",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "name",
-              "position": 0,
+              "position": 1,
               "sourceData": "Александр"
             },
             "phone_number": {
@@ -450,7 +450,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Service Id",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "service_id",
@@ -476,7 +476,7 @@
               "label": "Service Owner Id",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "service_owner_id",
-              "position": 1,
+              "position": 0,
               "sourceData": 370357284
             },
             "tg_link": {
@@ -550,7 +550,7 @@
               "label": "Additional Information",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "additional_information",
-              "position": 7,
+              "position": 5,
               "sourceData": "Проверяем"
             },
             "assistant_id": {
@@ -594,7 +594,7 @@
               "label": "Descriptions",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "descriptions",
-              "position": 6,
+              "position": 4,
               "sourceData": "Тестируем Сашек на своей аудитории"
             },
             "end_date": {
@@ -619,7 +619,7 @@
               "maxDate": "2121-12-31T18:29:00.000Z",
               "minDate": "1920-12-31T18:30:00.000Z",
               "originalIdentifier": "end_date",
-              "position": 5,
+              "position": 7,
               "shortcuts": false,
               "sourceData": "2024-11-11T11:57:16",
               "timePrecision": "minute"
@@ -639,7 +639,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Examinees Ids",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "examinees_ids",
@@ -707,7 +707,7 @@
               "isDisabled": false,
               "isRequired": false,
               "isSpellCheck": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Research Uuid",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "research_uuid",
@@ -720,7 +720,7 @@
               "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
               "boxShadow": "none",
               "children": {},
-              "closeOnSelection": false,
+              "closeOnSelection": true,
               "convertToISO": false,
               "dataType": "string",
               "dateFormat": "YYYY-MM-DDTHH:mm:ss",
@@ -736,7 +736,7 @@
               "maxDate": "2121-12-31T18:29:00.000Z",
               "minDate": "1920-12-31T18:30:00.000Z",
               "originalIdentifier": "start_date",
-              "position": 4,
+              "position": 6,
               "shortcuts": false,
               "sourceData": "2024-11-11T10:57:16",
               "timePrecision": "minute"
@@ -857,7 +857,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Form",
+  "title": "Введи параметры:",
   "topRow": 6,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": true,
