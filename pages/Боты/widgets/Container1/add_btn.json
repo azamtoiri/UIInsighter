@@ -20,7 +20,7 @@
   "iconName": "add",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": true,
   "labelTextSize": "0.875rem",
   "leftColumn": 55,
   "onClick": "{{showModal(Modal1.name);}}",
