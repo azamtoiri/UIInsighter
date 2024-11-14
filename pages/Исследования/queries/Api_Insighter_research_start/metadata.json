@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673471d9cb42e248870caa3e_39baa140-2b42-4951-ab8f-1dfd4aea4e04",
-  "id": "Новое исследование_Api_Insighter",
+  "gitSyncId": "673471d9cb42e248870caa3e_0a8ffd62-bab8-4573-89fe-4057e60076c8",
+  "id": "Исследования_Api_Insighter_research_start",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{\nResearchForm.formData\n}}",
+      "body": "{{\nJSONForm2.formData\n}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -43,8 +43,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Api_Insighter",
-    "pageId": "Новое исследование",
+    "name": "Api_Insighter_research_start",
+    "pageId": "Исследования",
     "userSetOnLoad": false
   }
 }
