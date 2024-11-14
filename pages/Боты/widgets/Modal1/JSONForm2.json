@@ -718,7 +718,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Form",
+  "title": "Данные аккаунта",
   "topRow": 6,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": true,
