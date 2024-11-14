@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{\nJSONForm2.formData\n}}",
+      "body": "{{\nJSONForm1.formData\n}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
