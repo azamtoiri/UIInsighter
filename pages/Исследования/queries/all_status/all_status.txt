@@ -1,7 +1,7 @@
 SELECT
   public.researches.research_id,
-	public.researches.name,
-  public.research_status.status_name
+	public.research_status.status_name,
+	public.researches.name
 FROM public.researches
 JOIN public.research_status
 ON public.researches.research_id = public.research_status.research_id

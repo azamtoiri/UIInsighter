@@ -1,6 +1,6 @@
 {
   "gitSyncId": "673471d9cb42e248870caa3e_0a8ffd62-bab8-4573-89fe-4057e60076c8",
-  "id": "Исследования_Api_Insighter_research_start",
+  "id": "Исследования_Research",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -43,7 +43,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Api_Insighter_research_start",
+    "name": "Research",
     "pageId": "Исследования",
     "userSetOnLoad": false
   }

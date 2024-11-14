@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  public.researches.research_id,\n\tpublic.researches.name,\n  public.research_status.status_name\nFROM public.researches\nJOIN public.research_status\nON public.researches.research_id = public.research_status.research_id\n",
+      "body": "SELECT\n  public.researches.research_id,\n\tpublic.research_status.status_name,\n\tpublic.researches.name\nFROM public.researches\nJOIN public.research_status\nON public.researches.research_id = public.research_status.research_id\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
