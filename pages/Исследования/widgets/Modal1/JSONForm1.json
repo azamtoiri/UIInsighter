@@ -302,7 +302,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onSubmit": "{{Research_start.run()}}",
+  "onSubmit": "{{Research_Start.run()}}",
   "originalBottomRow": 144,
   "originalTopRow": 6,
   "parentColumnSpace": 6.9375,

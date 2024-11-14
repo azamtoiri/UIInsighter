@@ -8,3 +8,4 @@ SELECT
 FROM public.researches
 JOIN public.research_status
 ON public.researches.research_id = public.research_status.research_id
+ORDER BY public.researches.research_id DESC;
