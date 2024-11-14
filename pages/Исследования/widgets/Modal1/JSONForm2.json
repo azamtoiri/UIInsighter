@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 153,
+  "bottomRow": 144,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -648,7 +648,7 @@
               "isCustomField": false,
               "isDisabled": false,
               "isRequired": false,
-              "isVisible": true,
+              "isVisible": false,
               "label": "Examinees Ids",
               "labelTextSize": "0.875rem",
               "originalIdentifier": "examinees_ids",
