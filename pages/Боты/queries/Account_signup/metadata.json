@@ -1,6 +1,6 @@
 {
   "gitSyncId": "673471d9cb42e248870caa3e_dd20c509-8577-4402-ac05-42bb32bedf1b",
-  "id": "Боты_Account",
+  "id": "Боты_Account_signup",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -43,7 +43,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Account",
+    "name": "Account_signup",
     "pageId": "Боты",
     "userSetOnLoad": false
   }
