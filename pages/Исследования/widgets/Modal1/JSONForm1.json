@@ -327,7 +327,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onSubmit": "{{Api1.run()}}",
-  "originalBottomRow": 177,
+  "originalBottomRow": 170,
   "originalTopRow": 6,
   "parentColumnSpace": 6.9375,
   "parentId": "btynu28m8y",
@@ -676,7 +676,9 @@
               "labelTextSize": "0.875rem",
               "originalIdentifier": "examinees_user_names",
               "position": 10,
-              "sourceData": []
+              "sourceData": [
+                "blackgraf14"
+              ]
             },
             "name": {
               "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -857,7 +859,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{\n  \"research\": {\n    \"research_uuid\": \"string\",\n    \"name\": \"Insighter\",\n    \"title\": \"Dogfood\",\n    \"theme\": \"Тестирование\",\n    \"start_date\": \"2024-11-11T10:57:16\",\n    \"end_date\": \"2024-11-11T11:57:16\",\n    \"descriptions\": \"Тестируем Сашек на своей аудитории\",\n    \"additional_information\": \"Проверяем\",\n    \"assistant_id\": 3,\n    \"examinees_ids\": [],\n    \"examinees_user_names\": []\n  },\n  \"owner\": {\n    \"name\": \"Александр\",\n    \"service_owner_id\": 370357284,\n    \"second_name\": \"Чернышов\",\n    \"phone_number\": \"89896186869\",\n    \"tg_link\": \"https://t.me/blackgraf14\",\n    \"language_code\": \"ru\",\n    \"service_id\": 0\n  }\n}",
+  "sourceData": "{\n  \"research\": {\n    \"research_uuid\": \"string\",\n    \"name\": \"Insighter\",\n    \"title\": \"MVP\",\n    \"theme\": \"Тестирование\",\n    \"start_date\": \"2024-11-11T10:57:16\",\n    \"end_date\": \"2024-11-11T11:57:16\",\n    \"descriptions\": \"Тестируем Сашек на своей аудитории\",\n    \"additional_information\": \"Проверяем\",\n    \"assistant_id\": 3,\n    \"examinees_ids\": [],\n    \"examinees_user_names\": [\"blackgraf14\"]\n  },\n  \"owner\": {\n    \"name\": \"Александр\",\n    \"service_owner_id\": 370357284,\n    \"second_name\": \"Чернышов\",\n    \"phone_number\": \"89896186869\",\n    \"tg_link\": \"https://t.me/blackgraf14\",\n    \"language_code\": \"ru\",\n    \"service_id\": 0\n  }\n}",
   "submitButtonLabel": "Отправить",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
