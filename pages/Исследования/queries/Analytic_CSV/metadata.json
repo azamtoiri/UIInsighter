@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{\n\"research_id\": \"{{JSONForm1.sourceData.research.title}}\",\n  }}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -27,7 +27,12 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "research_id",
+          "value": "{{data_table.selectedRow.research_id}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -39,7 +44,7 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": false,
