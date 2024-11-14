@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  public.research_status.status_name,\n\tpublic.researches.research_id,\n\tpublic.researches.name,\n\tpublic.researches.owner_id, \n\tpublic.researches.start_date,\n\tpublic.researches.end_date\nFROM public.researches\nJOIN public.research_status\nON public.researches.research_id = public.research_status.research_id\nORDER BY public.researches.research_id DESC;\n",
+      "body": "SELECT\n  public.research_status.status_name,\n\tpublic.researches.research_id,\n\tpublic.researches.name,\n\tpublic.researches.owner_id, \n\tpublic.researches.start_date,\n\tpublic.researches.end_date,\n\tpublic.researches.assistant_id,\n\tpublic.researches.telegram_client_id\nFROM public.researches\nJOIN public.research_status\nON public.researches.research_id = public.research_status.research_id\nORDER BY public.researches.research_id DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

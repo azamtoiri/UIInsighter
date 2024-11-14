@@ -29,14 +29,16 @@
     "name",
     "owner_id",
     "start_date",
-    "end_date"
+    "end_date",
+    "assistant_id",
+    "telegram_client_id"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731582227162,
+  "columnUpdatedAt": 1731585170531,
   "columnWidthMap": {
     "owner_id": 115,
     "research_id": 125,
@@ -113,6 +115,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuColor"
+    },
+    {
+      "key": "primaryColumns.assistant_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.telegram_client_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,7 +155,7 @@
   "isVisible": "true",
   "isVisibleDownload": true,
   "isVisibleFilters": true,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "isVisibleSearch": true,
   "key": "zba5qel0au",
   "label": "Data",
@@ -161,6 +169,40 @@
   "parentRowSpace": 10,
   "primaryColumnId": "research_id",
   "primaryColumns": {
+    "assistant_id": {
+      "alias": "assistant_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"assistant_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "assistant_id",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "assistant_id",
+      "notation": "standard",
+      "originalId": "assistant_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "customColumn1": {
       "alias": "analitics",
       "allowCellWrapping": false,
@@ -417,6 +459,40 @@
       "label": "status_name",
       "notation": "standard",
       "originalId": "status_name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "telegram_client_id": {
+      "alias": "telegram_client_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"telegram_client_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "telegram_client_id",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "telegram_client_id",
+      "notation": "standard",
+      "originalId": "telegram_client_id",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

@@ -4,7 +4,9 @@ SELECT
 	public.researches.name,
 	public.researches.owner_id, 
 	public.researches.start_date,
-	public.researches.end_date
+	public.researches.end_date,
+	public.researches.assistant_id,
+	public.researches.telegram_client_id
 FROM public.researches
 JOIN public.research_status
 ON public.researches.research_id = public.research_status.research_id
