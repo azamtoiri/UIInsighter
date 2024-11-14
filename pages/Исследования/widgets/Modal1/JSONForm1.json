@@ -295,17 +295,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.start_date.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.end_date.defaultValue"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"

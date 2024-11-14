@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 83,
+  "bottomRow": 111,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -162,7 +162,7 @@
   "isVisible": "true",
   "isVisibleDownload": true,
   "isVisibleFilters": true,
-  "isVisiblePagination": false,
+  "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "zba5qel0au",
   "label": "Data",
@@ -660,7 +660,7 @@
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "0",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
