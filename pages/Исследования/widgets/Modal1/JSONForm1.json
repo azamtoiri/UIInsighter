@@ -132,9 +132,6 @@
       "key": "schema.__root_schema__.children.research.children.title.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.research.children.theme.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.research.children.theme.accentColor"
     },
     {
@@ -157,9 +154,6 @@
     },
     {
       "key": "schema.__root_schema__.children.research.children.end_date.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.research.children.descriptions.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.research.children.descriptions.accentColor"
@@ -570,7 +564,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.descriptions))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "descriptions",
@@ -736,7 +730,7 @@
               "boxShadow": "none",
               "children": {},
               "dataType": "string",
-              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.research.theme))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+              "defaultValue": "",
               "fieldType": "Text Input",
               "iconAlign": "left",
               "identifier": "theme",
